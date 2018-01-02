@@ -20,8 +20,8 @@ function calculateEye(eye, x, y) {
 
 	let centerX = rect_outer.x + rect_outer.width / 2;
 	let centerY = rect_outer.y + rect_outer.height / 2;
-	let percentX = (x - centerX) / window.innerWidth + .5;
-	let percentY = (y - centerY) / window.innerHeight + .5;
+	let percentX = (x - centerX) / (window.innerWidth * 1.6) + .5;
+	let percentY = (y - centerY) / (window.innerHeight * 1.4) + .45;
 
 	eye.inner.style.left = percentX * rect_outer.width - rect_inner.width / 2;
 	eye.inner.style.top = percentY * rect_outer.height - rect_inner.height / 2;
